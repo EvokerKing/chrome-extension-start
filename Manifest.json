@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Extension Quickstart",
+  "version": "1.0",
+  "description": "A starter template for Chrome Extensions",
+  "default_locale": "en",
+  "author": "Your name",
+
+  "icons": {"512": "icon.png"},
+
+  "permissions": [],
+  "content_scripts": [{
+    "matches": ["*"],
+    "css": ["style.css"],
+    "js": ["main.js"]
+  }],
+  "action": {
+    "default_popup": "index.html"
+  }
+}
